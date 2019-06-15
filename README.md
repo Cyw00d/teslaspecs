@@ -2,6 +2,7 @@
         <a href="https://www.paypal.me/Cyw00d" target="_blank">
             <img src="https://img.shields.io/badge/donate-PayPal-blue.svg">
         </a>
+        <img src="https://img.shields.io/badge/license-MIT-green.svg">
 </div>
 
 # TeslaSpecs
