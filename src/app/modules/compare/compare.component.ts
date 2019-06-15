@@ -26,7 +26,7 @@ export class CompareComponent implements OnInit {
     { id: 'length', name: 'Length', value: '4694'},
     { id: 'width', name: 'Width', value: '1850'},
     { id: 'height', name: 'Height', value: '1443'},
-    { id: 'weight', name: 'Wieght', value: '1847'}
+    { id: 'weight', name: 'Weight', value: '1847'}
   ]
 
 
