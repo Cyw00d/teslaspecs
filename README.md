@@ -3,6 +3,7 @@
             <img src="https://img.shields.io/badge/donate-PayPal-blue.svg">
         </a>
         <img src="https://img.shields.io/badge/license-MIT-green.svg">
+        <img src="https://img.shields.io/badge/author-Cyw00d-green.svg">
 </div>
 
 # TeslaSpecs
