@@ -3,7 +3,7 @@
     width: 100%;
     min-height: calc(100vh - 11rem);
     display: block;
-    margin-top: 5rem;
+    margin-top: 1rem;
     & > div {
         padding: 1rem;
     }
@@ -26,4 +26,8 @@
             font-weight: bold;
         }
     }
+}
+
+.specssheet {
+    font-size: 7pt;
 }

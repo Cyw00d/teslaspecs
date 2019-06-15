@@ -12,6 +12,7 @@ import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
 import { MilesModule } from './pipe/miles.module';
 import { SelectedrangeService } from './modules/shared/selectedrange.service';
+import { ComparelistModule } from './modules/comparelist/comparelist.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SelectedrangeService } from './modules/shared/selectedrange.service';
   imports: [
     BrowserModule,
     HeaderModule,
+    ComparelistModule,
     HmdSelectorModule,
     HmdSelectorItemModule,
     OverviewModule,

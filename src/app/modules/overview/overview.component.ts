@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivehmdService } from '../shared/activehmd.service';
 import { model3 } from "./../shared/model3";
 import { MilesPipe } from 'src/app/miles.pipe';
+import { CompareService } from '../shared/compare.service';
+import { ImageService } from '../shared/image.service';
 
 @Component({
   selector: 'overview',
@@ -24,13 +26,22 @@ export class OverviewComponent implements OnInit {
     { name: "Interior", id: "STUD_SEAT" },
   ];
   public selectedView = 'STUD_3QTR';
-  public selectedRange = 'test';
+  public selectedRange;
 
-  constructor(public ahmd: ActivehmdService) {
-    this.ahmd.hmd.subscribe(list => this.hmdList = list);
+  public compareList: any;
+
+  constructor(
+    public ahmd: ActivehmdService,
+    private compareService: CompareService,
+    private imageService: ImageService
+    ) {
   }
 
   ngOnInit() {
+    this.ahmd.hmd.subscribe(list => this.hmdList = list);
+    this.compareService.compareList.subscribe(d => {
+      this.compareList = d;
+    });
   }
 
   selectRange(e) {
@@ -39,26 +50,12 @@ export class OverviewComponent implements OnInit {
 
   selectView(v) {
     this.selectedView = v;
-    this.renderImage();
+    this.illustration = this.imageService.renderImage(this.eventIllustration.range, this.eventIllustration.options, this.selectedView);
   }
 
   updateImage(e) {
-    console.log('Update image:', e);
     this.eventIllustration = e;
-    this.renderImage();
-    // this.illustration = e + '&view=' + this.selectedView;
-  }
-  renderImage() {
-    const opt = this.eventIllustration.options;
-    const range = this.eventIllustration.range;
-    const view = this.selectedView;
-    if (view === 'STUD_SEAT') {
-      this.illustration = `/assets/img/m3/m3_interior_${opt.interior == '$IN3PW' ? 'white' : 'black'}.png`;
-    } else if (view === 'STUD_REAR') {
-      this.illustration = `/assets/img/m3/m3_rear_${opt.color}.png`;
-    } else {
-      this.illustration = `/assets/img/m3/m3_${range}_${opt.color}_${opt.wheels}_${view}.png`;
-    }
+    this.illustration = this.imageService.renderImage(this.eventIllustration.range, this.eventIllustration.options, this.selectedView);
   }
 
 }

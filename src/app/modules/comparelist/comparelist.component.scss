@@ -1,0 +1,56 @@
+
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/solid.scss';
+.comparebutton {
+    display: flex;
+    margin-top: .5rem;
+    justify-content: center;
+    .btn {
+        flex: 0 200px;
+    }
+}
+.comparelist {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    &__item {
+        flex: 0 200px;
+        background-size: cover;
+        height: 100px;
+        position: relative;
+
+        > img {
+            width: 100%;
+        }
+
+        &__title {
+            text-align: center;
+            display: block;
+        }
+        &__delete {
+            cursor: pointer;
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            background-color: rgba(255,255,255,.7);
+            font-size: 27pt;
+            @extend .fa;
+            
+            &:before {
+                color: black;
+                line-height: 6rem;
+                display: block;
+                width: 100%;
+                text-align: center;
+                content: fa-content($fa-var-trash);
+            }
+        }
+        &:hover {
+            .comparelist__item__delete {
+                display: block;
+            }
+        }
+    }
+}

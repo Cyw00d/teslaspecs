@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "vrspecs": {
+    "teslaspecs": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/vrspecs",
+            "outputPath": "dist/teslaspecs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,6 +26,11 @@
               "src/styles.scss"
             ],
             "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src/assets/style"
+              ]
+            },
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -58,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "vrspecs:build"
+            "browserTarget": "teslaspecs:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "vrspecs:build:production"
+              "browserTarget": "teslaspecs:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "vrspecs:build"
+            "browserTarget": "teslaspecs:build"
           }
         },
         "test": {
@@ -103,7 +108,7 @@
         }
       }
     },
-    "vrspecs-e2e": {
+    "teslaspecs-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "vrspecs:serve"
+            "devServerTarget": "teslaspecs:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "vrspecs:serve:production"
+              "devServerTarget": "teslaspecs:serve:production"
             }
           }
         },
@@ -132,7 +137,7 @@
       }
     }
   },
-  "defaultProject": "vrspecs",
+  "defaultProject": "teslaspecs",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "scss"

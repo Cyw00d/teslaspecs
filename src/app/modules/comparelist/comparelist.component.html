@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="comparelist">
+        <div class="comparelist__item" *ngFor="let car of compareList; let i = index"  [ngStyle]="{'background-image': 'url(' + car.image + ')'}">
+          <div class="comparelist__item__title">
+            {{car.carData.name}}
+          </div>
+          <div class="comparelist__item__delete fa" (click)="delete(i)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="comparebutton" *ngIf="compareList.length">
+        <button class="btn btn-outline-primary" [disabled]="compareList.length < 2">Start Comparing</button>
+      </div>
+    </div>
+  </div>
+</div>
