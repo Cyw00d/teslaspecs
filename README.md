@@ -1,3 +1,8 @@
+<div align="center">
+        <a href="https://www.paypal.me/Cyw00d">
+            <img src="https://img.shields.io/badge/donate-PayPal-blue.svg">
+        </a>
+</div>
 # TeslaSpecs
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
