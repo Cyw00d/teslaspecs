@@ -19,10 +19,10 @@ export class OverviewComponent implements OnInit {
   public model3 = model3;
 
   public viewOptions = [
-    { name: "Normal", id: "STUD_3QTR" },
-    { name: "Front side", id: "STUD_WHEEL" },
-    { name: "Rear trunk", id: "STUD_REAR" },
+    { name: "Angled", id: "STUD_3QTR" },
+    { name: "Wheel Closeup", id: "STUD_WHEEL" },
     { name: "Full side", id: "STUD_SIDE" },
+    { name: "Rear trunk", id: "STUD_REAR" },
     { name: "Interior", id: "STUD_SEAT" },
   ];
   public selectedView = 'STUD_3QTR';

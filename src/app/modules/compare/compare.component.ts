@@ -14,9 +14,24 @@ export class CompareComponent implements OnInit {
   public compareList = [];
 
   public specsCompare = [
-    { name: 'Topspeed', id: 'topspeed_km' },
-    { name: 'Speed', id: 'speed' },
+    { id: 'range_wltp_km', name: 'Range WLTP (km)'},
+    { id: 'range_wltp_m', name: 'Range WLTP (miles)'},
+    { id: 'topspeed_km', name: 'Top speed (km)'},
+    { id: 'topspeed_m', name: 'Top speed (miles)'},
+    { id: 'speed', name: '0-100km/h (0-60 m/h)'},
+    { id: 'horsepower', name: 'Horsepower'},
+    { id: 'torgue', name: 'Torque'},
+    { id: 'capacity', name: 'Battery Capacity'},
+    { id: 'prem_options', name: 'Premium Options'},
+    { id: 'length', name: 'Length', value: '4694'},
+    { id: 'width', name: 'Width', value: '1850'},
+    { id: 'height', name: 'Height', value: '1443'},
+    { id: 'weight', name: 'Wieght', value: '1847'}
   ]
+
+
+
+
 
   constructor(private imageService: ImageService, private compareService: CompareService) { }
 

@@ -31,8 +31,7 @@ export class ComparelistComponent implements OnInit {
   }
 
   delete(index) {
-    this.compareList.splice(index, 1);
-    this.compareService.compareList.next(this.compareList);
+    this.compareService.delete(index);
   }
 
 }

@@ -24,7 +24,7 @@ export class CompareService {
   }
 
   delete(index) {
-    const cList: any = this.compareList.value;
+    let cList: any = this.compareList.value;
     cList.splice(index, 1);
     this.compareList.next(cList);
     this.storageService.save('comparelist', cList);
