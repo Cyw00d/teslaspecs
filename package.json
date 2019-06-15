@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "images": "ts-node index.ts",
+    "images": "ts-node imagedownload.ts",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
