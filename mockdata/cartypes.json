@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Standard Range",
+        "dual_motor": false,
+        "performance": false
+    },
+    {
+        "id": 2,
+        "name": "Standard Range+",
+        "dual_motor": false,
+        "performance": false
+    },
+    {
+        "id": 3,
+        "name": "Long Range",
+        "dual_motor": false,
+        "performance": false
+    },
+    {
+        "id": 4,
+        "name": "Long Range",
+        "dual_motor": true,
+        "performance": false
+    },
+    {
+        "id": 4,
+        "name": "Long Range",
+        "dual_motor": true,
+        "performance": true
+    }
+]

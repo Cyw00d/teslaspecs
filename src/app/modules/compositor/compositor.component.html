@@ -1,0 +1,32 @@
+<!-- <b>Range selection:</b> -->
+<div class="ranges">
+  <ng-container *ngFor="let c of data.range">
+    <div class="ranges__range" *ngIf="c.enabled"  (click)="selectRange(c)" [class.ranges__range--selected]="selectedRange === c.id">
+      {{c.name}}
+    </div>
+  </ng-container>
+</div>
+<!-- <b>Color selection:</b> -->
+<div class="colors">
+  <ng-container *ngFor="let c of data.colors">
+    <div class="colors__color" *ngIf="hasPermission(c.activeRanges)" (click)="selectOption(c.type, c.code)" [class.selected]="selectedOptions.color === c.code">
+      <img [src]="c.asset"> 
+    </div>
+  </ng-container>
+</div>
+<!-- <b>Wheels selection:</b> -->
+<div class="wheels">
+  <ng-container *ngFor="let w of data.wheels">
+    <div class="wheels__wheel" *ngIf="hasPermission(w.activeRanges)"  (click)="selectOption(w.type, w.code)" [class.selected]="selectedOptions.wheels === w.code">
+      <img [src]="w.asset"> {{w.name}}
+    </div>
+  </ng-container>
+</div>
+<!-- <b>Interior selection:</b> -->
+<div class="interiors">
+  <ng-container *ngFor="let i of data.interior">
+    <div class="interiors__interior" *ngIf="hasPermission(i.activeRanges)"  (click)="selectOption(i.type, i.code)" [class.selected]="selectedOptions.interior === i.code">
+      <img [src]="i.asset"> {{i.name}}
+    </div>
+  </ng-container>
+</div>

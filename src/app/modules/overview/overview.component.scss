@@ -1,0 +1,29 @@
+.overview {
+    background-color: white;
+    width: 100%;
+    min-height: calc(100vh - 11rem);
+    display: block;
+    margin-top: 5rem;
+    & > div {
+        padding: 1rem;
+    }
+}
+
+.viewselector {
+    display: flex;
+    flex-direction: column;
+    &__view {
+        cursor: pointer;
+        flex: 1 auto;
+        padding: .5rem;
+        margin: .2rem 0;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 9pt;
+        &.selected {
+            border: 2px solid #007fff;
+            font-weight: bold;
+        }
+    }
+}
