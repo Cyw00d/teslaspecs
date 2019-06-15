@@ -1,4 +1,4 @@
-<div class="hmd">
+<div class="hmd" [class.disabled]="!data.enabled">
   <div class="hmd__logo"  [ngStyle]="{'background-image': 'url(' + data.assets + ')'}">
     {{data.name}}
   </div>

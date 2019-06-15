@@ -1,0 +1,30 @@
+<div class="container">
+    <button class="btn btn-primary" [routerLink]="'/'">< Back to selection</button>
+    <div class="specssheet" *ngIf="compareList.length">
+      <table class="table table-striped">
+        <thead>
+          <!-- <tr>
+            <th scope="col">Key</th>
+            <th scope="col">Value</th>
+          </tr> -->
+          <tr>
+            <th scope="col"></th>
+            <th scope="col" *ngFor="let car of compareList">
+              <div class="carimage" [ngStyle]="{'background-image': 'url(' + car.image + ')'}">
+                {{car.carData.name}}
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of specsCompare">
+            <th>{{item.name}}</th>
+            <td scope="col" *ngFor="let car of compareList">{{car.specs[item.id].value}} {{car.specs[item.id].unit}}</td>
+            <!-- <td scope="col" *ngIf="!item.convert_miles" class="value">{{item.value}}{{item.unit}}</td>
+            <td scope="col" *ngIf="item.convert_miles" class="value">{{item.value | miles}}{{item.unit}}</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+<!-- <pre>{{compareList | json}}</pre> -->

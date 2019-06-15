@@ -1,0 +1,27 @@
+@import '~bootstrap-scss/bootstrap.scss';
+
+
+.container {
+    margin-top: 5rem;
+}
+
+.specssheet {
+    margin-top: 2rem;
+}
+.carimage {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 5rem;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+        font-size: 7pt;
+    }
+}
+
+td {
+    text-align: center;
+    @include media-breakpoint-down(md) {
+        font-size: 9pt;
+    }
+}

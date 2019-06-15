@@ -5,6 +5,7 @@ export const hmdList = [
         "dual_motor": false,
         "performance": false,
         assets: '/assets/img/models.jpg',
+        enabled: false,
     },
     {
         "id": 2,
@@ -12,6 +13,7 @@ export const hmdList = [
         "dual_motor": false,
         "performance": false,
         assets: '/assets/img/model3.jpg',
+        enabled: true,
     },
     {
         "id": 3,
@@ -19,6 +21,7 @@ export const hmdList = [
         "dual_motor": false,
         "performance": false,
         assets: '/assets/img/modelx.jpg',
+        enabled: false,
     },
     {
         "id": 4,
@@ -26,5 +29,6 @@ export const hmdList = [
         "dual_motor": true,
         "performance": false,
         assets: '/assets/img/modely.jpg',
+        enabled: false,
     }
 ]

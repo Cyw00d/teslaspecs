@@ -1,3 +1,6 @@
+
+@import '~bootstrap-scss/bootstrap.scss';
+
 .overview {
     background-color: white;
     width: 100%;
@@ -29,5 +32,7 @@
 }
 
 .specssheet {
-    font-size: 7pt;
+    @include media-breakpoint-down(md) {
+        font-size: 7pt;
+    }
 }

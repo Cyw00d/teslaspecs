@@ -13,10 +13,12 @@ import { reducers, metaReducers } from './reducers';
 import { MilesModule } from './pipe/miles.module';
 import { SelectedrangeService } from './modules/shared/selectedrange.service';
 import { ComparelistModule } from './modules/comparelist/comparelist.module';
+import { CompareComponent } from './modules/compare/compare.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CompareComponent,
   ],
   imports: [
     BrowserModule,
