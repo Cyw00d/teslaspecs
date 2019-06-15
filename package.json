@@ -1,6 +1,10 @@
 {
   "name": "teslaspecs",
-  "version": "0.0.8",
+  "author": "Kevin Stolk",
+  "homepage": "https://github.com/Cyw00d/teslaspecs",
+  "license": "MIT",
+  "description": "TeslaSpecs.info shared codebase",
+  "version": "0.0.9",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
