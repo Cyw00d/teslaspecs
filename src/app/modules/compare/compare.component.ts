@@ -14,7 +14,6 @@ import { PlatformLocation } from '@angular/common';
 })
 export class CompareComponent implements OnInit {
 
-  public compareList = [];
   private _options = options;
   private _model3 = model3;
   private m3urlCheck: RegExp = /^(m3_[a-z]{3,5})-([A-Z0-9]{4,5})-([A-Z0-9]{4,5})-([A-Z0-9]{4,5})$/;
@@ -36,8 +35,9 @@ export class CompareComponent implements OnInit {
   ]
 
   private sub: any;
-  private platformUrl = window.location.origin;
   private sharelink = '';
+
+  private compareList = [];
 
   constructor(
     private imageService: ImageService,
@@ -48,7 +48,6 @@ export class CompareComponent implements OnInit {
 
     // Check if we have url paramters:
     this.sub = this.route.params.subscribe(p => {
-      const compareList = [];
       const objKeys = Object.keys(p);
       if (objKeys.length > 1) {
         each(objKeys, o=> {
@@ -66,17 +65,12 @@ export class CompareComponent implements OnInit {
             specs: [ ...carData.specs ],
             image: this.imageService.renderImage(carCode[0], options),
           }
-          compareList.push(carObject);
+          this.compareList.push(carObject);
         });
       }
-      this.compareService.compareList.next(compareList);
-    })
-
-    this.compareService.compareList.subscribe(d => {
-      this.compareList = d;
-      this.updateData();
     });
-    this.generateCompareUrl();
+    this.updateData();
+    this.sharelink = this.compareService.generateCompareUrl(this.compareList);
   }
 
   updateData() {
@@ -91,14 +85,6 @@ export class CompareComponent implements OnInit {
 
   delete(index) {
     this.compareService.delete(index);
-  }
-
-  generateCompareUrl() {
-    const compareUrl = [];
-    each(this.compareList, c=> {
-      compareUrl.push(c.range + '-' + c.options.color.replace('$','') + '-' + c.options.wheels.replace('$','') + '-' + c.options.interior.replace('$',''));
-    });
-    this.sharelink = this.platformUrl + '/compare/' + compareUrl.join('/');
   }
 
 }
