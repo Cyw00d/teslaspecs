@@ -6,11 +6,11 @@ export const options = [
         "code": "$W38B",
         "asset": "/assets/img/wheels/opt-wheels-18pinwheel.png",
         'activeRanges': [
-            'sr',
-            'srp',
-            'lr',
-            'lrawd',
-            'lrp'
+            'm3_sr',
+            'm3_srp',
+            'm3_lr',
+            'm3_lrawd',
+            'm3_lrp'
         ],
     },{
         "type": "wheels",
@@ -18,11 +18,11 @@ export const options = [
         "code": "$W39B",
         "asset": "/assets/img/wheels/opt-wheels-19stilette.png",
         'activeRanges': [
-            'sr',
-            'srp',
-            'lr',
-            'lrawd',
-            'lrp'
+            'm3_sr',
+            'm3_srp',
+            'm3_lr',
+            'm3_lrawd',
+            'm3_lrp'
         ],
     },{
         "type": "wheels",
@@ -30,11 +30,11 @@ export const options = [
         "code": "$W32B",
         "asset": "/assets/img/wheels/opt-wheels-20inch.png",
         'activeRanges': [
-            'sr',
-            'srp',
-            'lr',
-            'lrawd',
-            'lrp'
+            'm3_sr',
+            'm3_srp',
+            'm3_lr',
+            'm3_lrawd',
+            'm3_lrp'
         ],
     },{
         "type": "color",
@@ -43,11 +43,11 @@ export const options = [
         "code": "$PBSB",
         'asset': '/assets/img/colors/ui_swat_col_pbsb.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
     },{
         "type": "color",
@@ -55,11 +55,11 @@ export const options = [
         "code": "$PMNG",
         'asset': '/assets/img/colors/ui_swat_col_pmng.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
     },{
         "type": "color",
@@ -67,11 +67,11 @@ export const options = [
         "code": "$PPSB",
         'asset': '/assets/img/colors/ui_swat_col_ppsb.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
     },{
         "type": "color",
@@ -79,11 +79,11 @@ export const options = [
         "code": "$PMBL",
         'asset': '/assets/img/colors/ui_swat_col_pmbl.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
     },{
         "type": "color",
@@ -91,11 +91,11 @@ export const options = [
         "code": "$PMSS",
         'asset': '/assets/img/colors/ui_swat_col_pmss.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
     },{
         "type": "color",
@@ -103,11 +103,11 @@ export const options = [
         "code": "$PPSW",
         'asset': '/assets/img/colors/ui_swat_col_ppsw.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
     },{
         "type": "color",
@@ -115,11 +115,11 @@ export const options = [
         "code": "$PPMR",
         'asset': '/assets/img/colors/ui_swat_col_ppmr.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
         
     },{
@@ -129,11 +129,11 @@ export const options = [
         'default': true,
         'asset': '/assets/img/interiors/black.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
     },{
         "type": "interior",
@@ -141,11 +141,11 @@ export const options = [
         "code": "$IN3PW",
         'asset': '/assets/img/interiors/white.png',
         'activeRanges': [
-            'sr', 
-            'srp', 
-            'lr', 
-            'lrawd', 
-            'lrp'
+            'm3_sr', 
+            'm3_srp', 
+            'm3_lr', 
+            'm3_lrawd', 
+            'm3_lrp'
         ],
     },
 ]

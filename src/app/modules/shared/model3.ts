@@ -26,7 +26,7 @@
 export const model3 = {
     "ranges": [
         {
-            id: "sr",
+            id: "m3_sr",
             name: "Standard Range",
             enabled: true,
             carcodes: ["$MT303","$DV2W"],
@@ -53,7 +53,7 @@ export const model3 = {
             ],
         },
         {
-            id: "srp",
+            id: "m3_srp",
             name: "Standard Range Plus",
             enabled: true,
             carcodes: ["$MT303","$DV2W"],
@@ -80,7 +80,7 @@ export const model3 = {
             ],
         },
         {
-            id: "lr",
+            id: "m3_lr",
             name: "Long Range RWD",
             enabled: true,
             carcodes: ["$MT303","$DV2W "],
@@ -107,7 +107,7 @@ export const model3 = {
             ],
         },
         {
-            id: "lrawd",
+            id: "m3_lrawd",
             name: "Long Range AWD",
             enabled: true,
             carcodes: ["$MT303","$DV4W"],
@@ -134,7 +134,7 @@ export const model3 = {
             ],
         },
         {
-            id: "lrp",
+            id: "m3_lrp",
             name: "Performance",
             enabled: true,
             carcodes: ["$MT304","$DV4W", "$SLR1"],

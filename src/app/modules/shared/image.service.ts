@@ -12,7 +12,7 @@ export class ImageService {
     } else if (view === 'STUD_REAR') {
       illustration = `/assets/img/m3/m3_rear_${options.color}.png`;
     } else {
-      illustration = `/assets/img/m3/m3_${range}_${options.color}_${options.wheels}_${view}.png`;
+      illustration = `/assets/img/m3/${range}_${options.color}_${options.wheels}_${view}.png`;
     }
     return illustration;
   }
