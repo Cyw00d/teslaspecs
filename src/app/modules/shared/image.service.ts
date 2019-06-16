@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ImageService {
   
-  renderImage(range, options, view) {
+  renderImage(range, options, view = 'STUD_3QTR') {
     let illustration;
     if (view === 'STUD_SEAT') {
       illustration = `/assets/img/m3/m3_interior_${options.interior == '$IN3PW' ? 'white' : 'black'}.png`;

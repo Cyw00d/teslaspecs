@@ -15,15 +15,15 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'compare/:model',
+    path: 'compare/:c',
     component: CompareComponent,
   },
   {
-    path: 'compare/:model/:model2',
+    path: 'compare/:c/:c2',
     component: CompareComponent,
   },
   {
-    path: 'compare/:model/:model2/:model3',
+    path: 'compare/:c/:c2/:c3',
     component: CompareComponent,
   }
 ];
