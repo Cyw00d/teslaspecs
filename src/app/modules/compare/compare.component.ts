@@ -37,6 +37,7 @@ export class CompareComponent implements OnInit {
 
   private sub: any;
   private platformUrl = window.location.origin;
+  private sharelink = '';
 
   constructor(
     private imageService: ImageService,
@@ -97,7 +98,7 @@ export class CompareComponent implements OnInit {
     each(this.compareList, c=> {
       compareUrl.push(c.range + '-' + c.options.color.replace('$','') + '-' + c.options.wheels.replace('$','') + '-' + c.options.interior.replace('$',''));
     });
-    console.log(this.platformUrl + '/compare/' + compareUrl.join('/'));
+    this.sharelink = this.platformUrl + '/compare/' + compareUrl.join('/');
   }
 
 }
