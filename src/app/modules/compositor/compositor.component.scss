@@ -1,6 +1,13 @@
 
 .compositor {
     text-align: center;
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        height: 2rem;
+        border-bottom: 1px solid #bdbdbd;
+    }
 }
 .ranges {
     display: flex;

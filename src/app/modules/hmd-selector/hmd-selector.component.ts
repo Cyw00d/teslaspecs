@@ -14,7 +14,6 @@ export class HmdSelectorComponent implements OnInit {
   constructor(public hmdService: ActivehmdService) {
     this.hmdService.hmd.subscribe(newList => {
       this.hmdList = newList;
-      console.log('list:', hmdList);
     });
   }
 

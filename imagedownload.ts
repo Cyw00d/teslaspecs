@@ -47,11 +47,11 @@ const arg = 'm3'; // Temporary
  */
 
 const carTypes: StringArrayOnly = {
-  standard_range:         ['$MT303', '$DV2W'],
-  standard_range_plus:    ['$MT303', '$DV2W'],
-  long_range_rwd:         ['$MT303', '$DV2W'],
-  long_range_awd:         ['$MT303', '$DV4W'],
-  long_range_performance: ['$MT304', '$DV4W', '$SLR1']
+  sr:         ['$MT303', '$DV2W'],
+  srp:    ['$MT303', '$DV2W'],
+  lr:         ['$MT303', '$DV2W'],
+  lrawd:         ['$MT303', '$DV4W'],
+  lrp: ['$MT304', '$DV4W', '$SLR1']
 };
 
 const motorTypes: StringOnly = {
