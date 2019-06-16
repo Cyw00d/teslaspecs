@@ -1,6 +1,6 @@
 <!-- <b>Range selection:</b> -->
 <div class="compositor">
-  <button class="btn btn-primary" (click)="AddToCompare()">Add to comparelist</button>
+  <div class="compositor__title">Configrator</div>
   <div class="ranges">
     <ng-container *ngFor="let c of data.range">
       <div class="ranges__range" *ngIf="c.enabled"  (click)="selectRange(c)" [class.ranges__range--selected]="selectedRange === c.id">
@@ -32,4 +32,5 @@
       </div>
     </ng-container>
   </div>
+  <button class="btn btn-outline-primary" (click)="AddToCompare()">Add this comfiguration to comparison list</button>
 </div>

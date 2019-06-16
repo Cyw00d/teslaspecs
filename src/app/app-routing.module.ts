@@ -13,6 +13,18 @@ const routes: Routes = [
     path: 'compare',
     component: CompareComponent,
     pathMatch: 'full',
+  },
+  {
+    path: 'compare/:model',
+    component: CompareComponent,
+  },
+  {
+    path: 'compare/:model/:model2',
+    component: CompareComponent,
+  },
+  {
+    path: 'compare/:model/:model2/:model3',
+    component: CompareComponent,
   }
 ];
 

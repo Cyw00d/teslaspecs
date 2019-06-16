@@ -14,7 +14,7 @@ export class CompositorComponent implements OnInit {
   @Output() selected: EventEmitter<object> = new EventEmitter<object>();
   @Output() range: EventEmitter<any> = new EventEmitter<string>();
 
-  public selectedRange = "standard_range"; // default
+  public selectedRange = "sr"; // default
   public selectedOptions = {
     wheels: '',
     color: '',

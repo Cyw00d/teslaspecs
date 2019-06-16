@@ -14,7 +14,7 @@
 
 .viewselector {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     &__view {
         cursor: pointer;
         flex: 1 auto;
