@@ -14,7 +14,7 @@
   <div class="row">
     <div class="col-12">
       <div class="comparebutton" *ngIf="compareList.length">
-        <button class="btn btn-outline-primary" [disabled]="compareList.length < 2" [routerLink]="'/compare'">Start Comparing</button>
+        <a class="btn btn-outline-primary" *ngIf="compareList.length > 1" [href]="compareUrl()">Start Comparing</a>
       </div>
     </div>
   </div>

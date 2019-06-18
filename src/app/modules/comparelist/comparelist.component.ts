@@ -34,4 +34,8 @@ export class ComparelistComponent implements OnInit {
     this.compareService.delete(index);
   }
 
+  compareUrl() {
+    return this.compareService.generateCompareUrl(this.compareList);
+  }
+
 }
