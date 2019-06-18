@@ -16,7 +16,7 @@ export class CompareComponent implements OnInit {
 
   private _options = options;
   private _model3 = model3;
-  private m3urlCheck: RegExp = /^(m3_[a-z]{3,5})-([A-Z0-9]{4,5})-([A-Z0-9]{4,5})-([A-Z0-9]{4,5})$/;
+  private m3urlCheck: RegExp = /^(m3_[a-z]{2,5})-([A-Z0-9]{4,5})-([A-Z0-9]{4,5})-([A-Z0-9]{4,5})$/;
 
   public specsCompare = [
     { id: 'range_wltp_km',  name: 'Range WLTP (km)' },
@@ -50,8 +50,9 @@ export class CompareComponent implements OnInit {
     this.sub = this.route.params.subscribe(p => {
       const objKeys = Object.keys(p);
       if (objKeys.length > 1) {
-        each(objKeys, o=> {
+        each(objKeys, o => {
           const carCode = p[o].match(this.m3urlCheck);
+          console.log('Carcode:', o, p, carCode);
           const carData = find(this._model3.ranges, m => m.id === carCode[1]);
           const options = {
             wheels: '$' + carCode[3],
