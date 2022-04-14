@@ -43,7 +43,7 @@
     "@types/jasmine": "^3.3.13",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
-    "async": "^3.0.1",
+    "async": "^3.2.2",
     "axios": "^0.19.0",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
